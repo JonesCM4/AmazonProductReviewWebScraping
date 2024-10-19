@@ -16,6 +16,7 @@ product_reviews = function(code, page) {
   for (c in code) {
     for (p in page) {
     #sort by recent reviews, change url
+    #example url: https://www.amazon.com/Quencher-FlowState-Stainless-Insulated-Smoothie/product-reviews/B0CP9YB3Q4/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews
     url <- paste0("https://www.amazon.com/.../product-reviews/", c,
                   "/...&reviewerType=all_reviews&formatType=current_format&pageNumber=", p,
                   "&reviewerType=all_reviews&sortBy=recent")
